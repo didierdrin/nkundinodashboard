@@ -37,14 +37,20 @@ const Library = () => {
 
   const categories = [
     "all",
-    "elitra-plus-series",
-    "weather-proof-of",
-    "group-sockets",
-    "accessory",
-    "automation-group",
-    "mechanical-group",
-    "cable-trunking",
-    "lighting-group"
+    "juice",
+    "margarine",
+    "dairy-products",
+    "rice",
+    "flour-and-composite-flour",
+    "cooking-and-olive-oil",
+    "bread-and-bakery-items",
+    "vegetables",
+    "fruits",
+    "mayonaise-ketchup-mustard",
+    "tooth-brush-and-mouth-wash",
+    "body-soaps",
+    "lotion",
+    "shampoo-conditioner"
   ];
 
   const [newProduct, setNewProduct] = useState<Partial<Product>>({
