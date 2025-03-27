@@ -131,7 +131,7 @@ function Dashboard() {
   return (
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar */}
-      <div className={`${sidebarOpen ? 'w-64' : 'w-20'} bg-purple-500 min-h-screen flex flex-col text-white p-5 transition-all duration-300`}>
+      <div className={`${sidebarOpen ? 'w-64' : 'w-20'} bg-green-500 min-h-screen flex flex-col text-white p-5 transition-all duration-300`}>
         <div className='flex flex-col flex-grow'>
           <button onClick={() => setSidebarOpen(!sidebarOpen)} className="mb-5 w-full text-left hover:text-slate-300">
             {sidebarOpen ? '« ' : '»'}
@@ -164,10 +164,10 @@ function Dashboard() {
               placeholder="Search..."
               value={searchQuery}
               onChange={handleSearch}
-              className="text-slate-500 text-[20px] cursor-pointer border border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-sm w-[600px] py-1 px-10 pr-12"
+              className="text-slate-500 text-[20px] cursor-pointer border border-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-500 rounded-sm w-[600px] py-1 px-10 pr-12"
             />
             <svg
-              className="absolute cursor-pointer right-3 top-1/2 transform -translate-y-1/2 h-6 w-6 text-indigo-500 hover:text-slate-800"
+              className="absolute cursor-pointer right-3 top-1/2 transform -translate-y-1/2 h-6 w-6 text-teal-500 hover:text-slate-800"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -182,10 +182,10 @@ function Dashboard() {
             </svg>
           </div>
           <div className="flex space-x-8 mr-8">
-            {/* <FaBell className="bg-white h-8 w-8 p-2 border border-black rounded-lg hover:bg-black hover:text-indigo-300 cursor-pointer" /> */}
+            {/* <FaBell className="bg-white h-8 w-8 p-2 border border-black rounded-lg hover:bg-black hover:text-teal-300 cursor-pointer" /> */}
             <div className="flex space-x-8 mr-8">
         <FaUser 
-          className="bg-white h-8 w-8 p-2 border border-black rounded-lg hover:bg-black hover:text-indigo-300 cursor-pointer" 
+          className="bg-white h-8 w-8 p-2 border border-black rounded-lg hover:bg-black hover:text-teal-300 cursor-pointer" 
           title={user?.email || 'No user email'}  // Add this line
         />
       </div>
@@ -588,7 +588,7 @@ export default function Home() {
 //   return (
 //     <div className="flex min-h-screen bg-gray-100">
 //       {/* Sidebar */}
-//       <div className={`${sidebarOpen ? 'w-64' : 'w-20'} bg-purple-500 min-h-screen flex flex-col text-white p-5 transition-all duration-300`}>
+//       <div className={`${sidebarOpen ? 'w-64' : 'w-20'} bg-green-500 min-h-screen flex flex-col text-white p-5 transition-all duration-300`}>
 //         <div className='flex flex-col flex-grow'>
 //         <button onClick={() => setSidebarOpen(!sidebarOpen)} className=" mb-5 w-full text-left hover:text-slate-300">
 //           {sidebarOpen ? '« ' : '»'}
